@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link href="mystyle.css" type="text/css" rel="stylesheet">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <form>
+            <h2 align="center">Registration Form</h2>
+            <fieldset class="personal-1">
+                <legend><b>Personal Details</b></legend>
+                   <table cellspacing="0" cellpadding="5">
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" name="un" id="un"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td><input type="radio" name="gen">M
+                            <input type="radio" name="gen">F</td>
+                        </tr>
+                        <tr>
+                            <td>Languages:</td>
+                            <td><input type="checkbox" name="lan">T
+                                <input type="checkbox" name="lan">E
+                                <input type="checkbox" name="lan">H</td>
+                        </tr>
+                        <tr>
+                            <td>Religion:</td>
+                            <td>
+                                <select name="rel" id="rel1">
+                                    <option value="HINDU">hindu</option>
+                                    <option value="CHRISTIAN">christian</option>
+                                    <option value="MUSLIM">muslim</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth:</td>
+                            <td><input type="date" name="dob"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile:</td>
+                            <td><input type="tel" name="mob"></td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>
+                                <textarea name="add" id="add" cols="20" rows="5"></textarea>
+                            </td>
+                        </tr>
+                   </table>
+            </fieldset>
+            <fieldset class="personal-1">
+                <legend><b>Education Details</b></legend>
+                <table>
+                    <tr>
+                        <td>Btech% :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Inter% :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>SSC% :</td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <table>
+                <tr id="hello">
+                    <td align="center"><input type="submit" name="submit" class="button-1"></td>
+                    <td align="center"><input type="reset" name="reset1" class="button-2"></td>
+                </tr> 
+            </table>
+        </form>
+    </body>
+</html>

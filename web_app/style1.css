@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center
+}
+
+.container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#top {
+    height: 80px;
+    width: 100%;
+    background-color: #113946;
+    margin-top: 0;
+}
+
+#top1 {
+    height: 40px;
+    width: 100%;
+    background-color: #BCA37F;
+
+}
+
+.container-1 {
+    display: flex;
+}
+
+#left {
+    float: left;
+    background-color: #EAD7BB;
+    width: 60%;
+    /* min-height:607px; */
+    height: auto;
+    overflow: auto;
+}
+
+#right {
+    background-color: #FFF2D8;
+    width: 40%;
+    height: 607px;
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#right table {
+    margin: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    margin: 1px;
+    padding: 15px;
+}
+
+table tr th {
+    font-size: 20px;
+}
+
+.item img {
+    height: 250px;
+    width: 300px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.item button {
+    width: 20%;
+    margin: 10px;
+}
+
+.info {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    height: 50px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+}
+#left h1 {
+      color:black;
+}
+button:hover {
+    background-color: red;
+}
+#b1 {
+    margin-left: 250px;
+}

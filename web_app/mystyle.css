@@ -1,0 +1,75 @@
+h2 
+{
+    color:tomato;
+}
+table th
+{
+    background:lightgray;
+}
+.table-1 tr:hover{
+    background-color: cornflowerblue;
+}
+a:link 
+{
+    text-decoration: none;
+    border-radius: 1px;
+}
+.personal-1 
+{
+    background-color:mistyrose;
+    margin-left: 200px;
+    margin-right:200px;
+    padding: 30px;
+}
+.head {
+    font-style: oblique;
+    border:1px solid tomato;
+    background-color:aliceblue;
+    text-align: center;
+}
+.button-1:hover {
+    background-color:green;
+    color:aliceblue;
+}
+.button-2:hover {
+    background-color: red;
+    color:aliceblue;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+.button-1 {
+    width:9vw;
+    margin-left: 400px;
+} 
+.button-2 {
+    width:9vw;
+    margin-right: 400px;
+}
+#hello{
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+}
+#hello td{
+    width: 100vw;
+}
+tr{
+    padding: 20px;
+}
+#image 
+{
+    justify-content:center;
+    width:20%;
+    height:20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#h:hover {
+    background-color:aqua;
+    
+}
+  
