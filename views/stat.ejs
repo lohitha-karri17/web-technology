@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Canvas element where the pie chart will be drawn -->
+    <!-- <canvas id="pieChart" width="100px" height="100px"></canvas> -->
+    <canvas id="pieChart" style="width: 600px; height: 600px;"></canvas>
+
+    <script>
+        // Extract data passed from app.js
+        const data = <%- JSON.stringify(data) %>;
+
+        // Process fetched data
+        const subjectNames = data.map(row => row.cname);
+        const averageScores = data.map(row => row.average_score);
+
+        // Create pie chart using Chart.js
+        const ctx = document.getElementById('pieChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: subjectNames,
+                datasets: [{
+                    data: averageScores,
+                    backgroundColor: [
+                    '#78B4E2', '#123754', '#194E76', '#246FA8', '#2B85CA', '#57A2DB'
+                    ]
+                }]
+            },
+            options: {
+        responsive: false
+    }
+        });
+    </script>
+</body>
+</html>

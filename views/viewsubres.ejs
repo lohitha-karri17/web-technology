@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        body {
+            font-family: 'Poppins';
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #242e39;
+            color: white;
+            font-size: 15px;
+            font-weight: 100;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        tr:not(:last-child) {
+        border-bottom: 1px dotted rgb(103, 98, 98);
+    }
+    </style>
+</head>
+<body>
+    <table class="sub">
+        <tr>
+            <th>#</th>
+            <th>Subject Name</th>
+            <th>Faculty Name</th>
+        </tr>
+        <% results.forEach((course, index) => { %>
+            <tr>
+                <td><%= index + 1 %></td>
+                <td><%= course.cname %></td>
+                <td><%= course.fname %></td>
+                <!-- <td><button class="button" onclick="window.location.href='/sfeedback?id=<%= course.id %>'">Provide Feedback</button></td> -->
+            </tr>
+        <% }); %>
+    </table>
+</body>
+</html>

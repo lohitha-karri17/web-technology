@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+       
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body, html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+        font-family: 'Poppins';   
+        background-color: rgb(255, 255, 255);
+    }
+    
+    header {
+        background-color: #8267c9;
+        padding: 35px 0;
+        text-align: center;
+        color: #fff;
+        font-size: larger;
+    }
+
+    .container {
+            box-sizing: border-box;
+            overflow: hidden;
+            max-width: 100%; /* Ensures the content does not exceed the width of the viewport */
+            margin: 0 auto; /* Centers the container horizontally */
+            height: 70%;
+            width: 80%;
+            margin-top: 3%;
+            background-color: #0b2a86;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgb(155, 148, 148);
+    }
+    .left{
+        width: 50%;
+        height: 100%;
+        background-color: rgb(227, 213, 249);
+        float: left;
+        
+    }
+    .left img{
+        width: 100%;
+        margin-top: 15%;
+    }
+    .right {
+        width: 50%;
+        height: 100%;
+        float: left;
+        /* background-color: aqua; */
+        background-color: rgb(227, 213, 249);
+        display: flex; /* Use flexbox layout */
+        justify-content: center; /* Horizontally center child elements */
+        align-items: center;
+    }   
+    
+    .log-box{
+        height: 300px;
+        width: 400px;
+        border-radius: 10px;
+        background-color: #c2b1ed;
+        border: 1px solid white;
+        justify-content: center; /* Horizontally center child elements */
+        align-items: center;
+        display: flex;
+       
+    }
+    #log-btn{
+        padding: 10px;
+        width: 310px;
+        border-radius: 5px;
+        border: 0px;
+        background-color: #8267c9;
+        color: white;
+    }
+    .login input[type="text"],input[type="password"]{
+        border-radius: 5px;
+        padding: 10px;
+        border: 0px;
+        width: 310px;
+    }
+    .login input[type="text"],label,input[type="password"],button{
+        font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Subject Feedback System</h1>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA6v3Xdj7j_iuE5VuZjwPAT69zmF5ZPjXIsg&usqp=CAU" 
+            alt="Feedback" >
+        </div>
+        <div class="right">
+           <div class="login">
+           <h2>Login to Share your Thoughts !!</h2>
+            <br><br>
+            <div class="log-box">
+                <form method="post" action="#">
+                    <label for="username">username :</label>
+                    <br><input type="text" name="username" id="rollno" >
+                    <br><br>
+                    <label for="password" >password :</label>
+                    <br><input type="password" name="password" id="pwd"  >
+                    <br><br>
+                    <button id="log-btn" type="submit">login</button>
+                </form>
+            </div>
+            
+           </div>
+        </div>
+    </div>
+    
+</body>
+</html>

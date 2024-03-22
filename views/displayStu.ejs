@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        
+        body{
+            font-family: 'Poppins';   
+        }
+        table {
+        border-collapse: collapse;
+        width: 60%;
+        }
+        th, td {
+        text-align: left;
+        padding: 8px;
+        }
+        th {
+        background-color: #242e39;
+        color: white;
+        font-size: 15px;
+        font-weight: 100;
+        }
+        tr:not(:last-child) {
+        border-bottom: 1px dotted rgb(103, 98, 98);
+    }
+    </style>
+</head>
+<body>
+    
+    <br>
+    <table class="sub">
+        <tr>
+            <th>#</th>
+            <th>RollNo</th>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Gender</th>
+            <!-- <th>PhnNo</th>
+            <th>DOB</th> -->
+        </tr>
+        
+     
+       <% for (let i = 0; i < result.length; i++) { %>
+        <tr>
+            <td><%= i + 1 %></td>
+            <td><%= result[i].rollno %></td>
+            <td><%= result[i].name %></td>
+            <td><%= result[i].branch %></td>
+            <td><%= result[i].gender %></td>
+           
+
+
+
+            
+        </tr>
+    <% } %>
+        
+        
+    </table>
+  
+</body>
+
+</html>

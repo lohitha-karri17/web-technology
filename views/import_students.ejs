@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Import/Update Students</title>
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+        width: 50%;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    select, input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Import/Update Students</h2>
+    <form action="/import_students" method="POST">
+        <!-- <div class="form-group">
+            <label for="course_type">Select Course Type:</label>
+            <select id="course_type" name="course_type">
+                <option value="btech">BTech</option>
+                <option value="mtech">MTech</option>
+            </select>
+        </div> -->
+        <div class="form-group">
+            <label for="academic_year">Academic Year:</label>
+            <input type="text" id="academic_year" name="academic_year" value="2023-2024">
+        </div>
+        <div class="form-group">
+            <label for="student_year">Student Year:</label>
+            <select id="student_year" name="student_year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="rollno">Rollno:</label>
+            <input type="text" id="rollno" name="rollno">
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="F" selected>Female</option>
+                <option value="M">Male</option>
+            </select>
+           
+        </div>
+        
+     
+        <div class="form-group">
+           <a href="/import_students"> <button type="submit" name="submit">New Student Update</button></a>
+      
+</div>
+    </form>
+</div>
+</body>
+</html>

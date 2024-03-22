@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Details View</title>
+<style>
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .form-container {
+        width: 50%;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    select, input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button[type="button"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button[type="button"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Student Details View</h2>
+    <form action="/view_student" method="POST">
+        <div class="form-group">
+            <label for="course_type">Select Course Type:</label>
+            <select id="course_type" name="course_type">
+                <option value="btech">BTech</option>
+                <option value="mtech">MTech</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="academic_year">Academic Year:</label>
+            <input type="text" id="academic_year" name="academic_year" value="2023-2024">
+        </div>
+        <div class="form-group">
+            <label for="student_year">Student Year:</label>
+            <select id="student_year" name="student_year">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3" selected>3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        <div class="form-group">
+           <a href="/displayStu"> <button type="button" name="submit">View Student</button></a>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
